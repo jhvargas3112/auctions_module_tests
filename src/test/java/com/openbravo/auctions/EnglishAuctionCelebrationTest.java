@@ -70,13 +70,13 @@ public class EnglishAuctionCelebrationTest {
         + "&buyer_id=" + buyersIds.get(0));
 
     newOfferInputElement = webDriver.findElement(By.id("input_offer"));
-    newOfferInputElement.sendKeys("176");
+    newOfferInputElement.sendKeys("95");
     confirmButtonElement = webDriver.findElement(By.id("confirm_offer_button"));
     confirmButtonElement.click();
     updateButtonElement = webDriver.findElement(By.id("update_auction_info_button"));
     updateButtonElement.click();
 
-    assertEquals("176 €", webDriver.findElement(By.id("highest_offer")).getText());
+    assertEquals("95 €", webDriver.findElement(By.id("highest_offer")).getText());
 
     // ------------------------------------------------------------------------------------------------
 
@@ -95,16 +95,16 @@ public class EnglishAuctionCelebrationTest {
 
     updateButtonElement = webDriver.findElement(By.id("update_auction_info_button"));
     updateButtonElement.click();
-    assertEquals("176 €", webDriver.findElement(By.id("highest_offer")).getText());
+    assertEquals("95 €", webDriver.findElement(By.id("highest_offer")).getText());
 
     newOfferInputElement = webDriver.findElement(By.id("input_offer"));
-    newOfferInputElement.sendKeys("177");
+    newOfferInputElement.sendKeys("100");
     confirmButtonElement = webDriver.findElement(By.id("confirm_offer_button"));
     confirmButtonElement.click();
 
     updateButtonElement = webDriver.findElement(By.id("update_auction_info_button"));
     updateButtonElement.click();
-    assertEquals("177 €", webDriver.findElement(By.id("highest_offer")).getText());
+    assertEquals("100 €", webDriver.findElement(By.id("highest_offer")).getText());
 
     // ------------------------------------------------------------------------------------------------
 
@@ -123,16 +123,16 @@ public class EnglishAuctionCelebrationTest {
 
     updateButtonElement = webDriver.findElement(By.id("update_auction_info_button"));
     updateButtonElement.click();
-    assertEquals("177 €", webDriver.findElement(By.id("highest_offer")).getText());
+    assertEquals("100 €", webDriver.findElement(By.id("highest_offer")).getText());
 
     newOfferInputElement = webDriver.findElement(By.id("input_offer"));
-    newOfferInputElement.sendKeys("180");
+    newOfferInputElement.sendKeys("175");
     confirmButtonElement = webDriver.findElement(By.id("confirm_offer_button"));
     confirmButtonElement.click();
 
     updateButtonElement = webDriver.findElement(By.id("update_auction_info_button"));
     updateButtonElement.click();
-    assertEquals("180 €", webDriver.findElement(By.id("highest_offer")).getText());
+    assertEquals("175 €", webDriver.findElement(By.id("highest_offer")).getText());
 
     // ------------------------------------------------------------------------------------------------
 
